@@ -9,6 +9,8 @@ import UIKit
 
 class ProfileVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var profileDataTableView: UITableView!
+    
+    @IBOutlet weak var loginBtn: UIButton!
     var headingArr = ["Orders","Help Center","Wishlist"]
     var imgArr = [UIImage(systemName: "square.3.layers.3d.middle.filled")!,UIImage(systemName: "person.wave.2")!,UIImage(systemName: "heart")!]
     var detailArr = ["Check your order status","Help regarding your recent purchases","Your most loved styles"]
@@ -18,8 +20,20 @@ class ProfileVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    
+    @IBAction func loginBtnTap(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "loginVC") as! loginVC
+        let vc = UINavigationController(rootViewController: loginVC)
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .coverVertical
+        present(vc, animated: true)
         
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return headingArr.count + secArr.count
     }
     

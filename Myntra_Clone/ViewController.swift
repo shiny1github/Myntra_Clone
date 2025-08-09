@@ -24,24 +24,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         homeScreenMainTableView.reloadData()
-    }
+     }
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        if #available(iOS 11.0, *) {
+            homeScreenMainTableView.contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
+
+//        super.viewWillAppear(animated)
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     @IBAction func wishListBtnTap(_ sender: UIButton) {
-        
             }
     
     @IBAction func notifyBtnTap(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "NotificationVC") as! NotificationVC
-        navigationController?.pushViewController(vc, animated: true)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "NotificationVC")
+        navigationController?.pushViewController(vc!, animated: true)
     }
     
     @IBAction func ProfileBtnTap(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
-        navigationController?.pushViewController(vc, animated: true)
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC
+        navigationController?.pushViewController(vc!, animated: true)
        
                }
     
