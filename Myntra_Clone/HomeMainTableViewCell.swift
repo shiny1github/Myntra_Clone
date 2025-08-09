@@ -12,6 +12,7 @@ class HomeMainTableViewCell: UITableViewCell {
     @IBOutlet weak var carouselColllectionView: UICollectionView!
     @IBOutlet weak var sliderColllectionView: UICollectionView!
     @IBOutlet weak var browsingColllectionView: UICollectionView!
+    
     var allCategoriesData = [AllCategories]()
     var carouselData: [String] = []
     var sliderData: [SliderItem] = []
@@ -36,16 +37,19 @@ class HomeMainTableViewCell: UITableViewCell {
 
     }
 }
+
+
 extension HomeMainTableViewCell:UICollectionViewDataSource{
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-            if kind == UICollectionView.elementKindSectionHeader{
-                let headerview = mainColllectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as? hearderReusableView
-                print("collectionView headerCell Done")
-                return headerview!
-            }
-        
-        return UICollectionReusableView()
-    }
+//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//            if kind == UICollectionView.elementKindSectionHeader{
+//                let headerview = mainColllectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as! hearderReusableView
+//
+//                print("collectionView headerCell Done")
+//                return headerview
+//            }
+//
+//        return UICollectionReusableView()
+//    }
     
     
     
@@ -101,6 +105,8 @@ extension HomeMainTableViewCell:UICollectionViewDataSource{
         }
        
     }
+
+
 
 
 //

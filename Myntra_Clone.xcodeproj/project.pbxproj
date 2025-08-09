@@ -12,7 +12,6 @@
 		185F2F4A2E40C379008AF3C6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F2F492E40C379008AF3C6 /* NetworkManager.swift */; };
 		18778F332E3389F4008434B6 /* BagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18778F322E3389F4008434B6 /* BagVC.swift */; };
 		18778F352E339EDC008434B6 /* main_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18778F342E339EDC008434B6 /* main_CollectionViewCell.swift */; };
-		18778F372E339F11008434B6 /* hearderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18778F362E339F11008434B6 /* hearderReusableView.swift */; };
 		188610752E40DB7F00AF0219 /* sliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188610742E40DB7F00AF0219 /* sliderCell.swift */; };
 		1887CC462E37BBFC00267C79 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887CC452E37BBFC00267C79 /* NotificationVC.swift */; };
 		18A047AC2E336BF400759832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A047AB2E336BF400759832 /* AppDelegate.swift */; };
@@ -33,7 +32,6 @@
 		185F2F492E40C379008AF3C6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		18778F322E3389F4008434B6 /* BagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagVC.swift; sourceTree = "<group>"; };
 		18778F342E339EDC008434B6 /* main_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_CollectionViewCell.swift; sourceTree = "<group>"; };
-		18778F362E339F11008434B6 /* hearderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hearderReusableView.swift; sourceTree = "<group>"; };
 		188610742E40DB7F00AF0219 /* sliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliderCell.swift; sourceTree = "<group>"; };
 		1887CC452E37BBFC00267C79 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		18A047A82E336BF400759832 /* Myntra_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Myntra_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +91,6 @@
 				1805CFEF2E436831004D4649 /* BrowsingCell.swift */,
 				18A75D712E41E8A600AD22F3 /* HomeMainTableViewCell.swift */,
 				1887CC452E37BBFC00267C79 /* NotificationVC.swift */,
-				18778F362E339F11008434B6 /* hearderReusableView.swift */,
 				18778F342E339EDC008434B6 /* main_CollectionViewCell.swift */,
 				18778F322E3389F4008434B6 /* BagVC.swift */,
 				18A047B42E336BF900759832 /* Assets.xcassets */,
@@ -181,7 +178,6 @@
 				1887CC462E37BBFC00267C79 /* NotificationVC.swift in Sources */,
 				18BC09812E350CCD00820CBA /* ProfileTableViewCell.swift in Sources */,
 				185F2F482E40A5C6008AF3C6 /* carouselCell.swift in Sources */,
-				18778F372E339F11008434B6 /* hearderReusableView.swift in Sources */,
 				18BC097D2E35012800820CBA /* ProfileVC.swift in Sources */,
 				18A047B02E336BF400759832 /* ViewController.swift in Sources */,
 				188610752E40DB7F00AF0219 /* sliderCell.swift in Sources */,

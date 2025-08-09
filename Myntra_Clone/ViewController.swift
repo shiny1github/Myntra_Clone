@@ -13,7 +13,14 @@ class ViewController: UIViewController {
     var carouselDataArray: [String] = []
     var sliderData: [SliderItem] = []
     @IBOutlet weak var homeScreenMainTableView: UITableView!
-    
+    @IBOutlet weak var locationView: UIView!
+    @IBOutlet weak var locationIcon: UIImageView!
+    @IBOutlet weak var deliveryLbl: UILabel!
+    @IBOutlet weak var searchTF: UITextField!
+    @IBOutlet weak var profileBtn: UIButton!
+    @IBOutlet weak var notifyBtn: UIButton!
+    @IBOutlet weak var wishListBtn: UIButton!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         homeScreenMainTableView.reloadData()
@@ -22,6 +29,22 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
+    @IBAction func wishListBtnTap(_ sender: UIButton) {
+        
+            }
+    
+    @IBAction func notifyBtnTap(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "NotificationVC") as! NotificationVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func ProfileBtnTap(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
+        navigationController?.pushViewController(vc, animated: true)
+       
+               }
+    
 }
 extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,6 +52,7 @@ extension ViewController: UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = homeScreenMainTableView.dequeueReusableCell(withIdentifier: "HomeMainTableViewCell", for: indexPath) as! HomeMainTableViewCell
+        
         print("tableview Done")
         return cell
     }
@@ -38,6 +62,9 @@ extension ViewController: UITableViewDelegate {
         return 1800
     }
 }
+
+
+
 
 
 
