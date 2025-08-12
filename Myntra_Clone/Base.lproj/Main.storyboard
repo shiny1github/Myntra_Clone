@@ -590,7 +590,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tbx-fv-sk9">
-                                <rect key="frame" x="5" y="172" width="1384" height="22"/>
+                                <rect key="frame" x="5" y="172" width="383" height="22"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2B9-jt-A5G">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="22"/>
@@ -636,12 +636,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEW-92-SY3">
                                         <rect key="frame" x="308" y="0.0" width="75" height="22"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="rectangle.grid.2x2.fill" catalog="system"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgF-5K-nd3">
-                                        <rect key="frame" x="385" y="0.0" width="999" height="22"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="rectangle.grid.2x2.fill" catalog="system"/>
@@ -694,7 +688,7 @@
                             <constraint firstItem="kPh-37-qtN" firstAttribute="top" secondItem="aAF-eL-lMn" secondAttribute="top" id="kfH-wG-YPQ"/>
                             <constraint firstItem="aAF-eL-lMn" firstAttribute="trailing" secondItem="Mpa-dt-X43" secondAttribute="trailing" id="lZT-3a-tq2"/>
                             <constraint firstItem="n5G-98-1WL" firstAttribute="centerY" secondItem="nng-IF-eow" secondAttribute="centerY" id="mRg-J7-Ob0"/>
-                            <constraint firstAttribute="trailing" secondItem="tbx-fv-sk9" secondAttribute="trailing" constant="-996" id="sao-bM-pYL"/>
+                            <constraint firstAttribute="trailing" secondItem="tbx-fv-sk9" secondAttribute="trailing" constant="5" id="sao-bM-pYL"/>
                             <constraint firstItem="jm6-jP-ob7" firstAttribute="leading" secondItem="aAF-eL-lMn" secondAttribute="leading" constant="12" id="u9z-wV-tFq"/>
                             <constraint firstItem="kPh-37-qtN" firstAttribute="leading" secondItem="bsb-nq-aSp" secondAttribute="leading" id="uhb-Pe-BuX"/>
                             <constraint firstItem="Mpa-dt-X43" firstAttribute="top" secondItem="tbx-fv-sk9" secondAttribute="bottom" constant="8" id="w2u-ZC-KuC"/>

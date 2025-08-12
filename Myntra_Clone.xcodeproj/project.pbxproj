@@ -12,6 +12,7 @@
 		185F2F4A2E40C379008AF3C6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F2F492E40C379008AF3C6 /* NetworkManager.swift */; };
 		18778F332E3389F4008434B6 /* BagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18778F322E3389F4008434B6 /* BagVC.swift */; };
 		18778F352E339EDC008434B6 /* main_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18778F342E339EDC008434B6 /* main_CollectionViewCell.swift */; };
+		1885B7C72E4AFF9900D8DCBE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1885B7C62E4AFF9900D8DCBE /* GoogleService-Info.plist */; };
 		188610752E40DB7F00AF0219 /* sliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188610742E40DB7F00AF0219 /* sliderCell.swift */; };
 		1887CC462E37BBFC00267C79 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887CC452E37BBFC00267C79 /* NotificationVC.swift */; };
 		18A047AC2E336BF400759832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A047AB2E336BF400759832 /* AppDelegate.swift */; };
@@ -22,11 +23,16 @@
 		18A047B82E336BF900759832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A047B62E336BF900759832 /* LaunchScreen.storyboard */; };
 		18A75D722E41E8A600AD22F3 /* HomeMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A75D712E41E8A600AD22F3 /* HomeMainTableViewCell.swift */; };
 		18B380F12E47526800CC0495 /* VerifyOtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B380F02E47526800CC0495 /* VerifyOtpVC.swift */; };
+		18B380F32E47803400CC0495 /* passwordLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B380F22E47803400CC0495 /* passwordLoginVC.swift */; };
+		18B380F52E47871500CC0495 /* helpVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B380F42E47871500CC0495 /* helpVc.swift */; };
 		18BC097D2E35012800820CBA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC097C2E35012800820CBA /* ProfileVC.swift */; };
 		18BC09812E350CCD00820CBA /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC09802E350CCD00820CBA /* ProfileTableViewCell.swift */; };
 		18BC09832E3511BB00820CBA /* profileSecTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC09822E3511BA00820CBA /* profileSecTableViewCell.swift */; };
 		18E6FBB22E4720AA009D1964 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6FBB12E4720AA009D1964 /* Profile.storyboard */; };
 		18E6FBB42E47244A009D1964 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6FBB32E47244A009D1964 /* loginVC.swift */; };
+		18FD930B2E4A29AB00762332 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FD930A2E4A29AB00762332 /* FirebaseAuth.framework */; };
+		18FD930F2E4A29C000762332 /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FD930E2E4A29C000762332 /* FirebaseAnalytics.xcframework */; };
+		46EA0433C734853C7DEA1C2E /* Pods_Myntra_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB7615C9A04521D8CECF514 /* Pods_Myntra_Clone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,7 @@
 		185F2F492E40C379008AF3C6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		18778F322E3389F4008434B6 /* BagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagVC.swift; sourceTree = "<group>"; };
 		18778F342E339EDC008434B6 /* main_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_CollectionViewCell.swift; sourceTree = "<group>"; };
+		1885B7C62E4AFF9900D8DCBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		188610742E40DB7F00AF0219 /* sliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliderCell.swift; sourceTree = "<group>"; };
 		1887CC452E37BBFC00267C79 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		18A047A82E336BF400759832 /* Myntra_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Myntra_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,11 +54,19 @@
 		18A047B92E336BF900759832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A75D712E41E8A600AD22F3 /* HomeMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainTableViewCell.swift; sourceTree = "<group>"; };
 		18B380F02E47526800CC0495 /* VerifyOtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpVC.swift; sourceTree = "<group>"; };
+		18B380F22E47803400CC0495 /* passwordLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passwordLoginVC.swift; sourceTree = "<group>"; };
+		18B380F42E47871500CC0495 /* helpVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpVc.swift; sourceTree = "<group>"; };
 		18BC097C2E35012800820CBA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		18BC09802E350CCD00820CBA /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		18BC09822E3511BA00820CBA /* profileSecTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSecTableViewCell.swift; sourceTree = "<group>"; };
 		18E6FBB12E4720AA009D1964 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		18E6FBB32E47244A009D1964 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		18FD930A2E4A29AB00762332 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FD930E2E4A29C000762332 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
+		18FD93112E4A2A4D00762332 /* Myntra_Clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Myntra_Clone.entitlements; sourceTree = "<group>"; };
+		5385A11DB7B66D742F70CE86 /* Pods-Myntra_Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myntra_Clone.release.xcconfig"; path = "Target Support Files/Pods-Myntra_Clone/Pods-Myntra_Clone.release.xcconfig"; sourceTree = "<group>"; };
+		BFB7615C9A04521D8CECF514 /* Pods_Myntra_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Myntra_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A20F3016E2311F5787C8B0 /* Pods-Myntra_Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myntra_Clone.debug.xcconfig"; path = "Target Support Files/Pods-Myntra_Clone/Pods-Myntra_Clone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FD930B2E4A29AB00762332 /* FirebaseAuth.framework in Frameworks */,
+				18FD930F2E4A29C000762332 /* FirebaseAnalytics.xcframework in Frameworks */,
+				46EA0433C734853C7DEA1C2E /* Pods_Myntra_Clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,8 @@
 			children = (
 				18A047AA2E336BF400759832 /* Myntra_Clone */,
 				18A047A92E336BF400759832 /* Products */,
+				7E2BE7A72300B04E6C6DA55C /* Pods */,
+				D2F3AC46228FE0EFDEF809E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +104,10 @@
 		18A047AA2E336BF400759832 /* Myntra_Clone */ = {
 			isa = PBXGroup;
 			children = (
+				18FD93112E4A2A4D00762332 /* Myntra_Clone.entitlements */,
+				18B380F42E47871500CC0495 /* helpVc.swift */,
 				18A047AB2E336BF400759832 /* AppDelegate.swift */,
+				18B380F22E47803400CC0495 /* passwordLoginVC.swift */,
 				18E6FBB32E47244A009D1964 /* loginVC.swift */,
 				18B380F02E47526800CC0495 /* VerifyOtpVC.swift */,
 				18BC097C2E35012800820CBA /* ProfileVC.swift */,
@@ -104,9 +127,29 @@
 				18778F322E3389F4008434B6 /* BagVC.swift */,
 				18A047B42E336BF900759832 /* Assets.xcassets */,
 				18A047B62E336BF900759832 /* LaunchScreen.storyboard */,
+				1885B7C62E4AFF9900D8DCBE /* GoogleService-Info.plist */,
 				18A047B92E336BF900759832 /* Info.plist */,
 			);
 			path = Myntra_Clone;
+			sourceTree = "<group>";
+		};
+		7E2BE7A72300B04E6C6DA55C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4A20F3016E2311F5787C8B0 /* Pods-Myntra_Clone.debug.xcconfig */,
+				5385A11DB7B66D742F70CE86 /* Pods-Myntra_Clone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2F3AC46228FE0EFDEF809E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18FD930E2E4A29C000762332 /* FirebaseAnalytics.xcframework */,
+				18FD930A2E4A29AB00762332 /* FirebaseAuth.framework */,
+				BFB7615C9A04521D8CECF514 /* Pods_Myntra_Clone.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A047BC2E336BF900759832 /* Build configuration list for PBXNativeTarget "Myntra_Clone" */;
 			buildPhases = (
+				1F68714565238436CA30734C /* [CP] Check Pods Manifest.lock */,
 				18A047A42E336BF400759832 /* Sources */,
 				18A047A52E336BF400759832 /* Frameworks */,
 				18A047A62E336BF400759832 /* Resources */,
+				6E74C8F4EC009EBBE181921F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +214,7 @@
 			files = (
 				18A047B82E336BF900759832 /* LaunchScreen.storyboard in Resources */,
 				18E6FBB22E4720AA009D1964 /* Profile.storyboard in Resources */,
+				1885B7C72E4AFF9900D8DCBE /* GoogleService-Info.plist in Resources */,
 				18A047B52E336BF900759832 /* Assets.xcassets in Resources */,
 				18A047B32E336BF400759832 /* Main.storyboard in Resources */,
 			);
@@ -176,12 +222,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F68714565238436CA30734C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Myntra_Clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E74C8F4EC009EBBE181921F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Myntra_Clone/Pods-Myntra_Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Myntra_Clone/Pods-Myntra_Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Myntra_Clone/Pods-Myntra_Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18A047A42E336BF400759832 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				185F2F4A2E40C379008AF3C6 /* NetworkManager.swift in Sources */,
+				18B380F52E47871500CC0495 /* helpVc.swift in Sources */,
 				18E6FBB42E47244A009D1964 /* loginVC.swift in Sources */,
 				1805CFF02E436831004D4649 /* BrowsingCell.swift in Sources */,
 				18A75D722E41E8A600AD22F3 /* HomeMainTableViewCell.swift in Sources */,
@@ -195,6 +284,7 @@
 				18778F332E3389F4008434B6 /* BagVC.swift in Sources */,
 				18A047AC2E336BF400759832 /* AppDelegate.swift in Sources */,
 				18B380F12E47526800CC0495 /* VerifyOtpVC.swift in Sources */,
+				18B380F32E47803400CC0495 /* passwordLoginVC.swift in Sources */,
 				18BC09832E3511BB00820CBA /* profileSecTableViewCell.swift in Sources */,
 				18A047AE2E336BF400759832 /* SceneDelegate.swift in Sources */,
 			);
@@ -338,11 +428,14 @@
 		};
 		18A047BD2E336BF900759832 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A20F3016E2311F5787C8B0 /* Pods-Myntra_Clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Myntra_Clone/Myntra_Clone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Myntra_Clone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -365,11 +458,14 @@
 		};
 		18A047BE2E336BF900759832 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5385A11DB7B66D742F70CE86 /* Pods-Myntra_Clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Myntra_Clone/Myntra_Clone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Myntra_Clone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

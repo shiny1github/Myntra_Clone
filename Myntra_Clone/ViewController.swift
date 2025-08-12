@@ -20,7 +20,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var profileBtn: UIButton!
     @IBOutlet weak var notifyBtn: UIButton!
     @IBOutlet weak var wishListBtn: UIButton!
-  
+    
+    @IBOutlet weak var allCategory: UIButton!
+    @IBOutlet weak var menCategory: UIButton!
+    @IBOutlet weak var womenCategory: UIButton!
+    @IBOutlet weak var kidsCategory: UIButton!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         homeScreenMainTableView.reloadData()
@@ -37,6 +46,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func wishListBtnTap(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "loginVC") as! loginVC
+        let vc = UINavigationController(rootViewController: loginVC)
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .coverVertical
+        present(vc, animated: true)
             }
     
     @IBAction func notifyBtnTap(_ sender: Any) {
