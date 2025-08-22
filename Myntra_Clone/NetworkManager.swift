@@ -10,7 +10,9 @@ import Foundation
 struct HomeScreenDataModel:Decodable{
     let carousel : [String]
     let slider : [SliderItem]
-    let browser : [BrowsingItem]                               ////==============================
+    let browser : [BrowsingItem]
+    let categories_side : [CategorySideItem]
+    ////==============================
 }
 struct AllCategories:Decodable {
     let Title: String
@@ -27,6 +29,10 @@ struct BrowsingItem: Decodable{
     let browsProductDetail : String
 }
 //==============================
+struct CategorySideItem: Decodable{
+    let categoryTitle : String
+    let sideImageURL : String
+}
 extension HomeMainTableViewCell{
     func getAllCategoryApi(){
         let serviceUrl = URL(string: "https://688321c321fa24876a9cc7de.mockapi.io/All_Categories")
@@ -55,8 +61,7 @@ extension HomeMainTableViewCell{
     }
     
     func getCarouselApi(){
-        let serviceUrl = URL(string: "https://raw.githubusercontent.com/shiny1github/myntra-json-api/main/Carousel.json"
-)
+        let serviceUrl = URL(string: "https://raw.githubusercontent.com/shiny1github/myntra-json-api/main/Carousel.json")
         let session = URLSession.shared
         let task = session.dataTask(with: serviceUrl!) { (serviceData, serviceResponse, serviceError) in
             if serviceError == nil{
@@ -67,6 +72,7 @@ extension HomeMainTableViewCell{
                         self.carouselData = decodedData.carousel
                         self.sliderData = decodedData.slider
                         self.browseData = decodedData.browser
+                       
                         DispatchQueue.main.async { [self] in
                             carouselColllectionView.reloadData()
                             sliderColllectionView.reloadData()
@@ -85,5 +91,35 @@ extension HomeMainTableViewCell{
         task.resume()
         }
     
+    
+    
   
     }
+
+extension AllCategoriesVC {
+    func getCategorySideApi(){
+        let serviceUrl = URL(string: "https://raw.githubusercontent.com/shiny1github/myntra-json-api/main/Carousel.json")
+        let session = URLSession.shared
+        let task = session.dataTask(with: serviceUrl!) { (serviceData, serviceResponse, serviceError) in
+            if serviceError == nil{
+                let httpResonse = serviceResponse as! HTTPURLResponse
+                if httpResonse.statusCode == 200{
+                    do{
+                        let decodedData = try JSONDecoder().decode(HomeScreenDataModel.self, from: serviceData!)
+                        self.categorySideData = decodedData.categories_side
+                        DispatchQueue.main.async { [self] in
+                            sidebarTableView.reloadData()
+                            print("Browse api loaded: \(categorySideData.count)")
+                        }
+                    }catch{
+                        print("parse error")
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        task.resume()
+    }
+}

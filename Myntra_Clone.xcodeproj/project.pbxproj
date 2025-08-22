@@ -30,6 +30,8 @@
 		18BC09832E3511BB00820CBA /* profileSecTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BC09822E3511BA00820CBA /* profileSecTableViewCell.swift */; };
 		18E6FBB22E4720AA009D1964 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6FBB12E4720AA009D1964 /* Profile.storyboard */; };
 		18E6FBB42E47244A009D1964 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6FBB32E47244A009D1964 /* loginVC.swift */; };
+		18E9B5F12E5841AF005D5DB5 /* AllCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9B5F02E5841AF005D5DB5 /* AllCategoriesVC.swift */; };
+		18E9B5F32E584817005D5DB5 /* CategorySidebarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9B5F22E584816005D5DB5 /* CategorySidebarTableViewCell.swift */; };
 		18FD930B2E4A29AB00762332 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FD930A2E4A29AB00762332 /* FirebaseAuth.framework */; };
 		18FD930F2E4A29C000762332 /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FD930E2E4A29C000762332 /* FirebaseAnalytics.xcframework */; };
 		46EA0433C734853C7DEA1C2E /* Pods_Myntra_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB7615C9A04521D8CECF514 /* Pods_Myntra_Clone.framework */; };
@@ -61,6 +63,8 @@
 		18BC09822E3511BA00820CBA /* profileSecTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSecTableViewCell.swift; sourceTree = "<group>"; };
 		18E6FBB12E4720AA009D1964 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		18E6FBB32E47244A009D1964 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		18E9B5F02E5841AF005D5DB5 /* AllCategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesVC.swift; sourceTree = "<group>"; };
+		18E9B5F22E584816005D5DB5 /* CategorySidebarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySidebarTableViewCell.swift; sourceTree = "<group>"; };
 		18FD930A2E4A29AB00762332 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FD930E2E4A29C000762332 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
 		18FD93112E4A2A4D00762332 /* Myntra_Clone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Myntra_Clone.entitlements; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				188610742E40DB7F00AF0219 /* sliderCell.swift */,
 				18A047AF2E336BF400759832 /* ViewController.swift */,
 				18A047B12E336BF400759832 /* Main.storyboard */,
+				18E9B5F22E584816005D5DB5 /* CategorySidebarTableViewCell.swift */,
+				18E9B5F02E5841AF005D5DB5 /* AllCategoriesVC.swift */,
 				18E6FBB12E4720AA009D1964 /* Profile.storyboard */,
 				1805CFEF2E436831004D4649 /* BrowsingCell.swift */,
 				18A75D712E41E8A600AD22F3 /* HomeMainTableViewCell.swift */,
@@ -285,6 +291,8 @@
 				18A047AC2E336BF400759832 /* AppDelegate.swift in Sources */,
 				18B380F12E47526800CC0495 /* VerifyOtpVC.swift in Sources */,
 				18B380F32E47803400CC0495 /* passwordLoginVC.swift in Sources */,
+				18E9B5F32E584817005D5DB5 /* CategorySidebarTableViewCell.swift in Sources */,
+				18E9B5F12E5841AF005D5DB5 /* AllCategoriesVC.swift in Sources */,
 				18BC09832E3511BB00820CBA /* profileSecTableViewCell.swift in Sources */,
 				18A047AE2E336BF400759832 /* SceneDelegate.swift in Sources */,
 			);

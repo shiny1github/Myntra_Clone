@@ -66,6 +66,14 @@ class ViewController: UIViewController {
        
                }
     
+    @IBAction func allCategoryBtnTap(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AllCategoriesVC")
+        navigationController?.pushViewController(vc!, animated: true)
+        
+    }
+    
+    
 }
 extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
